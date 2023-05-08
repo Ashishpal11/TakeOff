@@ -7,6 +7,11 @@ module.exports.getOffers = (req, res) => {
     .catch((err) => res.status(404).json({ error: err }));
 };
 
+module.exports.addOffer=(req,res)=>{
+  console.log(req.body)
+  offers.create(req.body).then(data=>res.json(data));
+}
+
 module.exports.getMainOffer = (req, res) => {
   offers
     .find({ type: "Mix" })

@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const {
+  addOffer,
   getOffers,
   getMainOffer,
   getPromoValidation,
@@ -10,6 +11,7 @@ const {
 // to get all the available offers
 router.get("/getoffers", getOffers);
 
+router.post("/add",addOffer);
 // to get the biggest offer going on
 router.get("/mainoffer", getMainOffer);
 

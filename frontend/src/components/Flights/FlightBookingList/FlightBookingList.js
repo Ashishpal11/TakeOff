@@ -1,6 +1,4 @@
-/**
- * @author ${Bhavesh Lalwani}
- */
+
 
 import React,  { useState, useEffect} from 'react';
 import './FlightBookingList.scss';
